@@ -1,0 +1,29 @@
+{
+  "name": "brok-arkitektur",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "docker": "docker run --rm -it -v $PWD/workspace:/usr/local/structurizr -p 8080:8080 structurizr/lite",
+    "diagrams": "nodemon --watch workspace/workspace.dsl scripts/export-diagrams.js http://localhost:8080/workspace/diagrams png"
+  },
+  "nodemonConfig": {
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ohatland/brok-arkitektur.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ohatland/brok-arkitektur/issues"
+  },
+  "homepage": "https://github.com/ohatland/brok-arkitektur#readme",
+  "dependencies": {
+    "puppeteer": "^19.7.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.21"
+  }
+}
