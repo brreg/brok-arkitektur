@@ -4,12 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "push": "node scripts/push-to-web.js",
     "docker": "docker run --rm -it -v $PWD/workspace:/usr/local/structurizr -p 8080:8080 structurizr/lite",
     "diagrams": "nodemon --watch workspace/workspace.dsl scripts/export-diagrams.js http://localhost:8080/workspace/diagrams png"
   },
-  "nodemonConfig": {
-
-  },
+  "nodemonConfig": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ohatland/brok-arkitektur.git"
@@ -21,6 +20,7 @@
   },
   "homepage": "https://github.com/ohatland/brok-arkitektur#readme",
   "dependencies": {
+    "dotenv": "^16.0.3",
     "puppeteer": "^19.7.3"
   },
   "devDependencies": {

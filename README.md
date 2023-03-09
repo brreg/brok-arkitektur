@@ -1,5 +1,5 @@
 # Context
-![alt text](./images/Oversikt.png)
+![](./images/Oversikt.png)
 
 # Container
 ## Fagsystem
